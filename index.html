@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Singh — Full-Stack Developer</title>
+    <meta name="description" content="Prince Singh — full-stack developer building fast, polished web products: SaaS analytics, headless commerce, and realtime tools.">
+    <link rel="canonical" href="https://princesingh04.github.io/portfolio-clone/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Prince Singh">
+    <meta property="og:title" content="Prince Singh — Full-Stack Developer">
+    <meta property="og:description" content="Prince Singh — full-stack developer building fast, polished web products: SaaS analytics, headless commerce, and realtime tools.">
+    <meta property="og:url" content="https://princesingh04.github.io/portfolio-clone/">
+    <meta property="og:image" content="https://princesingh04.github.io/portfolio-clone/assets/og.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Prince Singh — Full-Stack Developer. Fast, polished web products from schema to interface.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prince Singh — Full-Stack Developer">
+    <meta name="twitter:description" content="Full-stack developer building fast, polished web products: SaaS analytics, headless commerce, and realtime tools.">
+    <meta name="twitter:image" content="https://princesingh04.github.io/portfolio-clone/assets/og.png">
+    <meta name="twitter:image:alt" content="Prince Singh — Full-Stack Developer">
+    <meta name="theme-color" content="#15120e">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315120e'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23e9a83e'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='19' text-anchor='middle' fill='%2315120e'%3EPS%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/paper.css">
+    <script>
+        (function () {
+            var d = document.documentElement;
+            d.classList.add('js');
+            try {
+                if (localStorage.getItem('theme') === 'light') {
+                    d.dataset.theme = 'light';
+                    var meta = document.querySelector('meta[name="theme-color"]');
+                    if (meta) meta.setAttribute('content', '#f7f1e6');
+                }
+                if (matchMedia('(prefers-reduced-motion: reduce)').matches || sessionStorage.getItem('intro-seen')) {
+                    d.dataset.intro = 'seen';
+                }
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas id="field" aria-hidden="true"></canvas>
+
+    <div class="intro" id="intro" aria-hidden="true">
+        <div class="intro__piece intro__piece--top" id="intro-top">
+            <div class="intro__mark">
+                <p class="intro__name">Prince Singh</p>
+                <p class="intro__sub">initializing ~/prince</p>
+            </div>
+        </div>
+        <div class="intro__piece intro__piece--bottom" id="intro-bottom">
+            <div class="intro__mark">
+                <p class="intro__name">Prince Singh</p>
+                <p class="intro__sub">initializing ~/prince</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <header class="profile wrap" id="top">
+            <div class="profile__row" data-reveal>
+                <div class="avatar" aria-hidden="true">
+                    PS
+                    <span class="avatar__dot"></span>
+                </div>
+                <div class="profile__intro">
+                    <h1>Prince Singh</h1>
+                    <p class="handle">@princesingh · full-stack developer</p>
+                    <p class="tagline">React, Node.js, PostgreSQL, TypeScript.</p>
+                </div>
+            </div>
+
+            <div class="profile__socials" data-reveal style="--d:.06s">
+                <a class="keycap keycap--primary" href="mailto:hello@princesingh.dev">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                    Email me
+                </a>
+                <a class="keycap" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+                </a>
+                <a class="keycap" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" title="X / Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a class="keycap" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+                </a>
+                <a class="keycap" href="resume.html" target="_blank" rel="noopener" aria-label="Résumé" title="Résumé">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+                    CV
+                </a>
+            </div>
+
+            <p class="bio" data-reveal style="--d:.1s">
+                I build web products end to end — schemas and APIs on one side, interfaces people actually
+                enjoy using on the other. Lately that's meant <a href="#work">SaaS analytics</a>,
+                headless commerce, and realtime tools. I care about performance, accessibility, and
+                software that stays correct under load.
+            </p>
+
+            <ul class="stats" data-reveal style="--d:.14s">
+                <li>
+                    <span class="stat__num">4+ yrs</span>
+                    <span class="stat__label">shipping products</span>
+                </li>
+                <li>
+                    <span class="stat__num">2M+</span>
+                    <span class="stat__label">events / day at Lumen</span>
+                </li>
+                <li>
+                    <span class="stat__num">40+</span>
+                    <span class="stat__label">merchants on Cartly</span>
+                </li>
+                <li>
+                    <span class="stat__num">98+</span>
+                    <span class="stat__label">avg Lighthouse score</span>
+                </li>
+            </ul>
+
+            <p class="availability" data-reveal style="--d:.18s">
+                <span class="status-dot" aria-hidden="true"></span>
+                Open to freelance projects and full-time roles · Remote — working worldwide
+            </p>
+        </header>
+
+        <main id="main">
+            <section id="services" class="section wrap" aria-labelledby="services-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="services-title">What I do</h2>
+                        <p>
+                            I'm a full-stack developer for products where the details matter: the query
+                            plan behind the dashboard, the loading state nobody notices, the animation
+                            that makes an interface feel alive instead of busy.
+                        </p>
+                    </div>
+                </div>
+
+                <ul class="services">
+                    <li data-reveal style="--d:.02s">
+                        <article class="card card--interactive service-card">
+                            <div class="keycap-row" aria-label="React, TypeScript, Next.js">
+                                <span class="keycap keycap--mini" title="React"><img src="assets/logos/react.svg" alt=""><span class="sr-only">React</span></span>
+                                <span class="keycap keycap--mini" title="TypeScript"><img src="assets/logos/typescript.svg" alt=""><span class="sr-only">TypeScript</span></span>
+                                <span class="keycap keycap--mini" title="Next.js"><img src="assets/logos/nextdotjs.svg" alt=""><span class="sr-only">Next.js</span></span>
+                            </div>
+                            <h3>Product engineering</h3>
+                            <p>Typed interfaces, sensible state, and features taken from idea to production without losing the thread.</p>
+                            <p class="outcome">7 products shipped end-to-end</p>
+                        </article>
+                    </li>
+                    <li data-reveal style="--d:.06s">
+                        <article class="card card--interactive service-card">
+                            <div class="keycap-row" aria-label="Node.js, PostgreSQL, Redis">
+                                <span class="keycap keycap--mini" title="Node.js"><img src="assets/logos/nodedotjs.svg" alt=""><span class="sr-only">Node.js</span></span>
+                                <span class="keycap keycap--mini" title="PostgreSQL"><img src="assets/logos/postgresql.svg" alt=""><span class="sr-only">PostgreSQL</span></span>
+                                <span class="keycap keycap--mini" title="Redis"><img src="assets/logos/redis.svg" alt=""><span class="sr-only">Redis</span></span>
+                            </div>
+                            <h3>Backend systems</h3>
+                            <p>APIs, workers, queues, and data pipelines that stay fast and correct at scale — with caching, Postgres tuning, and monitoring built in.</p>
+                            <p class="outcome">2M+ events/day, sub-second queries</p>
+                        </article>
+                    </li>
+                    <li data-reveal style="--d:.1s">
+                        <article class="card card--interactive service-card">
+                            <div class="keycap-row" aria-label="Stripe, Prisma, Next.js">
+                                <span class="keycap keycap--mini" title="Stripe"><img src="assets/logos/stripe.svg" alt=""><span class="sr-only">Stripe</span></span>
+                                <span class="keycap keycap--mini" title="Prisma"><img src="assets/logos/prisma.svg" alt=""><span class="sr-only">Prisma</span></span>
+                                <span class="keycap keycap--mini" title="Next.js"><img src="assets/logos/nextdotjs.svg" alt=""><span class="sr-only">Next.js</span></span>
+                            </div>
+                            <h3>Commerce &amp; SaaS</h3>
+                            <p>Headless storefronts, subscriptions, checkout flows, and admin tooling that make the business side of a product feel effortless.</p>
+                            <p class="outcome">40+ merchants served on Cartly</p>
+                        </article>
+                    </li>
+                    <li data-reveal style="--d:.14s">
+                        <article class="card card--interactive service-card">
+                            <div class="keycap-row" aria-label="Three.js, GSAP, Jest">
+                                <span class="keycap keycap--mini" title="Three.js"><img src="assets/logos/threedotjs.svg" alt=""><span class="sr-only">Three.js</span></span>
+                                <span class="keycap keycap--mini" title="GSAP"><b>G</b><span class="sr-only">GSAP</span></span>
+                                <span class="keycap keycap--mini" title="Jest"><img src="assets/logos/jest.svg" alt=""><span class="sr-only">Jest</span></span>
+                            </div>
+                            <h3>Performance &amp; polish</h3>
+                            <p>Core Web Vitals, accessible components, and motion with restraint — the difference between a working product and one that feels expensive.</p>
+                            <p class="outcome">98+ Lighthouse across recent builds</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="experience" class="section wrap wrap--wide" aria-labelledby="experience-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="experience-title">Experience</h2>
+                        <p>Four years of shipping product — first at studios, then in-house, now independently.</p>
+                    </div>
+                    <a class="section-link" href="resume.html" target="_blank" rel="noopener">Full résumé ↗</a>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__rail" aria-hidden="true"><span class="timeline__fill" id="timeline-fill"></span></div>
+                    <ol class="timeline__list">
+
+                    <li class="tl-row">
+                        <article class="card tl-card" data-reveal>
+                            <div class="tl-meta">
+                                <span>2024 — Present</span>
+                                <span>Freelance</span>
+                            </div>
+                            <h3>Senior Full-Stack Developer</h3>
+                            <p class="tl-company">Independent · Remote</p>
+                            <p class="tl-desc">
+                                End-to-end product delivery for startups — architecture, APIs, interfaces,
+                                and deployment. I work directly with founders and own the stack from schema
+                                to shipped feature.
+                            </p>
+                            <p class="tl-highlight">Rebuilt a SaaS analytics platform now ingesting 2M+ events a day.</p>
+                            <div class="tags">
+                                <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">AWS</span>
+                            </div>
+                            <button class="link-btn" type="button" data-case="role-independent">Read the story <span>+</span></button>
+                        </article>
+                        <div class="tl-side" data-reveal style="--d:.08s">
+                            <div class="window">
+                                <div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span>lumen.app/dashboard</span></div>
+                                <div class="window__body">
+                                    <div class="pv pv--dash">
+                                        <div class="pv__side"></div>
+                                        <div class="pv__main">
+                                            <div class="pv__stats"><i></i><i></i><i></i></div>
+                                            <div class="pv__bars">
+                                                <i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:46%"></i>
+                                                <i style="--h:78%"></i><i style="--h:54%"></i><i style="--h:88%"></i><i style="--h:66%"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="tl-row tl-row--flip">
+                        <article class="card tl-card" data-reveal>
+                            <div class="tl-meta">
+                                <span>2022 — 2024</span>
+                                <span>Full-time</span>
+                            </div>
+                            <h3>Full-Stack Developer</h3>
+                            <p class="tl-company">Northwind Labs</p>
+                            <p class="tl-desc">
+                                Built a headless commerce platform used by 40+ merchants and cut checkout
+                                latency by 38%. Introduced the design system, CI pipelines, and mentored
+                                two junior developers.
+                            </p>
+                            <p class="tl-highlight">Checkout latency down 38% across 40+ merchant stores.</p>
+                            <div class="tags">
+                                <span class="tag">Next.js</span><span class="tag">Prisma</span><span class="tag">Stripe</span><span class="tag">Redis</span>
+                            </div>
+                            <button class="link-btn" type="button" data-case="role-northwind">Read the story <span>+</span></button>
+                        </article>
+                        <div class="tl-side" data-reveal style="--d:.08s">
+                            <div class="window">
+                                <div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span>northwind.dev</span></div>
+                                <div class="window__body">
+                                    <div class="pv pv--shop"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="tl-row">
+                        <article class="card tl-card" data-reveal>
+                            <div class="tl-meta">
+                                <span>2021 — 2022</span>
+                                <span>Full-time</span>
+                            </div>
+                            <h3>Frontend Developer</h3>
+                            <p class="tl-company">Pixel &amp; Co.</p>
+                            <p class="tl-desc">
+                                Delivered marketing sites and internal dashboards for fintech clients.
+                                Rebuilt the front-end stack with TypeScript and React, and raised
+                                Lighthouse performance across the board.
+                            </p>
+                            <p class="tl-highlight">98+ Lighthouse scores across every client build.</p>
+                            <div class="tags">
+                                <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">GSAP</span>
+                            </div>
+                            <button class="link-btn" type="button" data-case="role-pixel">Read the story <span>+</span></button>
+                        </article>
+                        <div class="tl-side" data-reveal style="--d:.08s">
+                            <div class="metric">
+                                <span class="metric__num">98+</span>
+                                <span class="metric__label">average Lighthouse performance across recent client builds.</span>
+                                <span class="metric__meta">PIXEL &amp; CO. · 2021 — 2022</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="tl-row tl-row--flip">
+                        <article class="card tl-card" data-reveal>
+                            <div class="tl-meta">
+                                <span>2020 — 2021</span>
+                                <span>Full-time</span>
+                            </div>
+                            <h3>Junior Web Developer</h3>
+                            <p class="tl-company">Crafted Web Studio</p>
+                            <p class="tl-desc">
+                                Shipped responsive websites for 15+ clients, maintained custom PHP and
+                                WordPress builds, and learned to own projects from first call to launch.
+                            </p>
+                            <p class="tl-highlight">15+ client sites shipped in the first year.</p>
+                            <div class="tags">
+                                <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+                            </div>
+                            <button class="link-btn" type="button" data-case="role-crafted">Read the story <span>+</span></button>
+                        </article>
+                        <div class="tl-side" data-reveal style="--d:.08s">
+                            <div class="metric">
+                                <span class="metric__num">15+</span>
+                                <span class="metric__label">client websites shipped in the first year, scoped and launched end-to-end.</span>
+                                <span class="metric__meta">CRAFTED WEB STUDIO · 2020 — 2021</span>
+                            </div>
+                        </div>
+                    </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="contributions" class="section wrap" aria-labelledby="contributions-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="contributions-title">Shipping in public</h2>
+                        <p>Commits, reviews, and small improvements — the quiet part of building software.</p>
+                    </div>
+                </div>
+
+                <div class="card heatmap-card" data-reveal>
+                    <div class="heatmap__top">
+                        <p><strong id="contrib-total">—</strong> contributions in the last year.</p>
+                        <span>Hover a day to see its count</span>
+                    </div>
+                    <div class="heatmap__scroll">
+                        <div class="heatmap__inner">
+                            <div class="heatmap__months" id="heatmap-months" aria-hidden="true"></div>
+                            <div class="heatmap__grid" id="heatmap-grid" role="img" aria-label="Contribution activity over the last year"></div>
+                        </div>
+                    </div>
+                    <div class="heatmap__foot">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+                        <div class="heatmap__legend" aria-hidden="true">
+                            <span>Less</span>
+                            <i></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i>
+                            <span>More</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="work" class="section wrap" aria-labelledby="work-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="work-title">Selected projects</h2>
+                        <p>Things I built outside client work — most of them start with a question and end with a shipped product.</p>
+                    </div>
+                </div>
+
+                <ul class="projects">
+                    <li data-reveal>
+                        <article class="card card--interactive project">
+                            <div class="project__preview">
+                                <div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span>lumen.app</span></div>
+                                <div class="window__body">
+                                    <div class="pv pv--dash">
+                                        <div class="pv__side"></div>
+                                        <div class="pv__main">
+                                            <div class="pv__stats"><i></i><i></i><i></i></div>
+                                            <div class="pv__bars">
+                                                <i style="--h:34%"></i><i style="--h:58%"></i><i style="--h:44%"></i>
+                                                <i style="--h:76%"></i><i style="--h:52%"></i><i style="--h:86%"></i><i style="--h:64%"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <p class="project__meta">Oct 2026</p>
+                                <h3><button type="button" data-case="project-lumen">Lumen Analytics</button></h3>
+                                <p class="project__desc">
+                                    Real-time product analytics with funnels, retention cohorts, and a custom
+                                    dashboard builder — ingesting 2M+ events a day.
+                                </p>
+                                <div class="tags">
+                                    <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
+                                </div>
+                                <div class="project__actions">
+                                    <button class="link-btn" type="button" data-case="project-lumen">Case study <span>+</span></button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li data-reveal style="--d:.04s">
+                        <article class="card card--interactive project">
+                            <div class="project__preview">
+                                <div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span>cartly.shop</span></div>
+                                <div class="window__body">
+                                    <div class="pv pv--shop"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <p class="project__meta">Mar 2025</p>
+                                <h3><button type="button" data-case="project-cartly">Cartly Commerce</button></h3>
+                                <p class="project__desc">
+                                    Headless commerce platform with a storefront builder, Stripe checkout,
+                                    and an admin dashboard serving 40+ merchants.
+                                </p>
+                                <div class="tags">
+                                    <span class="tag">Next.js</span><span class="tag">Prisma</span><span class="tag">Stripe</span>
+                                </div>
+                                <div class="project__actions">
+                                    <button class="link-btn" type="button" data-case="project-cartly">Case study <span>+</span></button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li data-reveal style="--d:.08s">
+                        <article class="card card--interactive project">
+                            <div class="project__preview">
+                                <div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span>nimbus.chat</span></div>
+                                <div class="window__body">
+                                    <div class="pv pv--chat">
+                                        <div class="pv__bubble"><i></i><i></i></div>
+                                        <div class="pv__bubble pv__bubble--me"><i></i></div>
+                                        <div class="pv__bubble"><i></i></div>
+                                        <div class="pv__bubble pv__bubble--me"><i></i><i></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <p class="project__meta">Nov 2025</p>
+                                <h3><button type="button" data-case="project-nimbus">Nimbus Chat</button></h3>
+                                <p class="project__desc">
+                                    Realtime team messaging with presence, typing indicators, threads,
+                                    and end-to-end encrypted direct messages.
+                                </p>
+                                <div class="tags">
+                                    <span class="tag">Socket.IO</span><span class="tag">Redis</span><span class="tag">React</span>
+                                </div>
+                                <div class="project__actions">
+                                    <button class="link-btn" type="button" data-case="project-nimbus">Case study <span>+</span></button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li data-reveal style="--d:.12s">
+                        <article class="card card--interactive project">
+                            <div class="project__preview">
+                                <div class="window__bar" aria-hidden="true"><i></i><i></i><i></i><span>frameflow.ai</span></div>
+                                <div class="window__body">
+                                    <div class="pv pv--video">
+                                        <div class="pv__screen"></div>
+                                        <div class="pv__timeline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <p class="project__meta">Aug 2024</p>
+                                <h3><button type="button" data-case="project-frameflow">Frameflow AI</button></h3>
+                                <p class="project__desc">
+                                    AI video repurposing tool that turns long-form content into short clips
+                                    with auto captions and smart cropping.
+                                </p>
+                                <div class="tags">
+                                    <span class="tag">OpenAI</span><span class="tag">Node.js</span><span class="tag">FFmpeg</span>
+                                </div>
+                                <div class="project__actions">
+                                    <button class="link-btn" type="button" data-case="project-frameflow">Case study <span>+</span></button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+
+                <a class="section-link projects__more" href="https://github.com/" target="_blank" rel="noopener noreferrer">More experiments on GitHub ↗</a>
+            </section>
+
+            <section id="writing" class="section wrap" aria-labelledby="writing-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="writing-title">Writing</h2>
+                        <p>Notes from things I built, broke, and fixed.</p>
+                    </div>
+                </div>
+
+                <ul class="writing">
+                    <li data-reveal>
+                        <article class="card card--interactive writing-card">
+                            <div class="writing__meta">
+                                <span class="tag">Performance</span>
+                                <span>Oct 2026</span>
+                            </div>
+                            <h3><button type="button" data-case="note-frames">A portfolio that doesn't drop frames</button></h3>
+                            <p>How a dot grid, IntersectionObserver, and a little restraint keep this page smooth on a five-year-old laptop.</p>
+                            <button class="link-btn" type="button" data-case="note-frames">Read the note <span>+</span></button>
+                        </article>
+                    </li>
+                    <li data-reveal style="--d:.05s">
+                        <article class="card card--interactive writing-card">
+                            <div class="writing__meta">
+                                <span class="tag">Backend</span>
+                                <span>Aug 2026</span>
+                            </div>
+                            <h3><button type="button" data-case="note-idempotency">The webhook that charged twice</button></h3>
+                            <p>Idempotency keys, unique constraints, and the bug that taught me to design retries before writing the happy path.</p>
+                            <button class="link-btn" type="button" data-case="note-idempotency">Read the note <span>+</span></button>
+                        </article>
+                    </li>
+                    <li data-reveal style="--d:.1s">
+                        <article class="card card--interactive writing-card">
+                            <div class="writing__meta">
+                                <span class="tag">Frontend</span>
+                                <span>Jun 2026</span>
+                            </div>
+                            <h3><button type="button" data-case="note-motion">Motion with manners</button></h3>
+                            <p>Reduced motion is not a kill switch. It's a second design that deserves the same attention as the first.</p>
+                            <button class="link-btn" type="button" data-case="note-motion">Read the note <span>+</span></button>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="recognition" class="section wrap" aria-labelledby="recognition-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="recognition-title">Recognition</h2>
+                        <p>Certifications and programs that shaped how I build.</p>
+                    </div>
+                </div>
+
+                <ul class="recognition">
+                    <li class="card recog" data-reveal>
+                        <span class="recog__badge" aria-hidden="true">AWS</span>
+                        <div>
+                            <h3>AWS Certified Developer — Associate</h3>
+                            <p>Amazon Web Services · cloud architecture, deployment, and operations.</p>
+                        </div>
+                        <span class="recog__meta">2024</span>
+                    </li>
+                    <li class="card recog" data-reveal style="--d:.04s">
+                        <span class="recog__badge" aria-hidden="true">M</span>
+                        <div>
+                            <h3>Meta Front-End Developer</h3>
+                            <p>Meta · React, interface engineering, and responsive design.</p>
+                        </div>
+                        <span class="recog__meta">2022</span>
+                    </li>
+                    <li class="card recog" data-reveal style="--d:.08s">
+                        <span class="recog__badge" aria-hidden="true">DB</span>
+                        <div>
+                            <h3>MongoDB Associate Developer</h3>
+                            <p>MongoDB · document modelling, aggregation, and application design.</p>
+                        </div>
+                        <span class="recog__meta">2021</span>
+                    </li>
+                    <li class="card recog" data-reveal style="--d:.12s">
+                        <span class="recog__badge" aria-hidden="true">fCC</span>
+                        <div>
+                            <h3>Full-Stack Engineering</h3>
+                            <p>freeCodeCamp · 300 hours of responsive web, APIs, and databases.</p>
+                        </div>
+                        <span class="recog__meta">2020</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="skills" class="section wrap" aria-labelledby="skills-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="skills-title">What I work with</h2>
+                        <p>The tools I reach for when there's a product to build.</p>
+                    </div>
+                </div>
+
+                <div class="skills" data-reveal>
+                    <div class="skill-row">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li class="skill-pill"><img src="assets/logos/typescript.svg" alt="">TypeScript</li>
+                            <li class="skill-pill"><img src="assets/logos/javascript.svg" alt="">JavaScript</li>
+                            <li class="skill-pill"><img src="assets/logos/python.svg" alt="">Python</li>
+                            <li class="skill-pill"><b>SQL</b>SQL</li>
+                            <li class="skill-pill"><b>H</b>HTML / CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li class="skill-pill"><img src="assets/logos/react.svg" alt="">React</li>
+                            <li class="skill-pill"><img src="assets/logos/nextdotjs.svg" alt="">Next.js</li>
+                            <li class="skill-pill"><img src="assets/logos/tailwindcss.svg" alt="">Tailwind CSS</li>
+                            <li class="skill-pill"><b>G</b>GSAP</li>
+                            <li class="skill-pill"><img src="assets/logos/threedotjs.svg" alt="">Three.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li class="skill-pill"><img src="assets/logos/nodedotjs.svg" alt="">Node.js</li>
+                            <li class="skill-pill"><img src="assets/logos/postgresql.svg" alt="">PostgreSQL</li>
+                            <li class="skill-pill"><img src="assets/logos/redis.svg" alt="">Redis</li>
+                            <li class="skill-pill"><img src="assets/logos/prisma.svg" alt="">Prisma</li>
+                            <li class="skill-pill"><img src="assets/logos/graphql.svg" alt="">GraphQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Cloud &amp; tools</h3>
+                        <ul>
+                            <li class="skill-pill"><b>AWS</b>AWS</li>
+                            <li class="skill-pill"><img src="assets/logos/docker.svg" alt="">Docker</li>
+                            <li class="skill-pill"><img src="assets/logos/git.svg" alt="">Git</li>
+                            <li class="skill-pill"><img src="assets/logos/vercel.svg" alt="">Vercel</li>
+                            <li class="skill-pill"><img src="assets/logos/jest.svg" alt="">Jest</li>
+                            <li class="skill-pill"><b>PW</b>Playwright</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section wrap" aria-labelledby="education-title">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 id="education-title">Education</h2>
+                    </div>
+                </div>
+
+                <ul class="education">
+                    <li class="card edu" data-reveal>
+                        <div>
+                            <h3>B.Tech, Computer Science</h3>
+                            <p>University of Delhi · First Class with Distinction</p>
+                        </div>
+                        <span class="edu__meta">2016 — 2020</span>
+                    </li>
+                    <li class="card edu" data-reveal style="--d:.05s">
+                        <div>
+                            <h3>Full-Stack Engineering</h3>
+                            <p>freeCodeCamp · 300-hour curriculum</p>
+                        </div>
+                        <span class="edu__meta">2020</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contact" class="section wrap" aria-labelledby="contact-title">
+                <div class="contact-card" data-reveal>
+                    <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span>~/contact</span>
+                    <h2 id="contact-title">Have something<br>worth building?</h2>
+                    <p>
+                        I'm taking on freelance projects and open to full-time roles. Tell me what
+                        you're working on — I usually reply within a day.
+                    </p>
+                    <div class="contact__actions">
+                        <a class="keycap keycap--primary" href="mailto:hello@princesingh.dev">
+                            Email me
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                        <button class="keycap" type="button" id="copy-email" data-email="hello@princesingh.dev" aria-live="polite">
+                            Copy email
+                        </button>
+                    </div>
+                    <div class="contact__socials">
+                        <a class="keycap" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+                        </a>
+                        <a class="keycap" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" title="X / Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a class="keycap" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+                        </a>
+                    </div>
+                    <p class="contact__email">or write directly — <a href="mailto:hello@princesingh.dev">hello@princesingh.dev</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer wrap">
+            <div class="footer__inner">
+                <span>© 2026 Prince Singh · Remote, worldwide</span>
+                <span>Built with vanilla HTML, CSS &amp; JS</span>
+                <a href="#top">Back to top ↑</a>
+            </div>
+        </footer>
+    </div>
+
+    <nav class="dock" aria-label="Primary">
+        <span class="dock__path" aria-hidden="true">~/prince</span>
+        <a class="dock__link is-active" href="#top" data-section="top" aria-current="page" aria-label="Home">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
+            <span>Home</span>
+        </a>
+        <a class="dock__link" href="#experience" data-section="experience" aria-label="Experience">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
+            <span>Experience</span>
+        </a>
+        <a class="dock__link" href="#work" data-section="work" aria-label="Work">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <span>Work</span>
+        </a>
+        <a class="dock__link" href="#writing" data-section="writing" aria-label="Writing">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+            <span>Writing</span>
+        </a>
+        <a class="dock__link" href="#contact" data-section="contact" aria-label="Contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <span>Contact</span>
+        </a>
+        <span class="dock__sep" aria-hidden="true"></span>
+        <button class="keycap theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+    </nav>
+
+    <dialog class="dialog" id="case-dialog" aria-labelledby="case-title">
+        <div class="dialog__bar">
+            <span class="dialog__path" id="case-path">~/case</span>
+            <button class="dialog__close" type="button" aria-label="Close dialog">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="dialog__inner">
+            <h2 id="case-title"></h2>
+            <p class="dialog__meta" id="case-meta"></p>
+            <div class="dialog__body" id="case-body"></div>
+            <div class="dialog__stack" id="case-stack" hidden></div>
+        </div>
+    </dialog>
+
+    <div class="tip" id="heatmap-tip" role="tooltip"></div>
+
+    <script src="js/paper.js"></script>
+</body>
+</html>

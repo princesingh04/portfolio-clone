@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Singh — Full-Stack Developer</title>
+    <meta name="description" content="Prince Singh — full-stack developer building fast, polished web applications from database architecture and APIs to pixel-perfect interfaces.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315120e'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23e9a83e'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='19' text-anchor='middle' fill='%2315120e'%3EPS%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-top">
+            <span class="loader-logo">PRINCE SINGH<span>©</span></span>
+            <span>Portfolio — 2026</span>
+        </div>
+        <div class="loader-center">
+            <span class="loader-count" id="loader-count">0</span><span class="loader-percent">%</span>
+        </div>
+        <div class="loader-bottom">
+            <span class="loader-tagline">Full-stack developer — designing &amp; shipping the web</span>
+            <div class="loader-bar"><span></span></div>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <nav id="nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">PRINCE SINGH<span>©</span></a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="local-time"><span class="time-dot"></span><span id="local-time">LOCAL — 00:00</span></div>
+                <a href="#contact" class="nav-cta magnetic">Let's talk</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-grid container">
+            <div class="hero-left">
+                <div class="hero-kicker">
+                    <span class="status-dot"></span>
+                    Available for select projects — 2026
+                </div>
+                <h1 class="hero-title">
+                    <span class="line"><span class="line-inner">BUILDING</span></span>
+                    <span class="line"><span class="line-inner">PRODUCTS</span></span>
+                    <span class="line line-serif"><span class="line-inner">that scale</span></span>
+                </h1>
+                <p class="hero-sub">
+                    Full-stack developer building fast, reliable web applications — from database architecture and APIs to polished, animated interfaces.
+                </p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-lime magnetic">View selected work <span class="btn-arrow">↘</span></a>
+                    <a href="#contact" class="btn btn-ghost magnetic">Get in touch</a>
+                </div>
+                <div class="hero-meta">
+                    <div class="hero-meta__item">
+                        <span class="hero-meta__num">04+</span>
+                        <span class="hero-meta__label">Years of<br>experience</span>
+                    </div>
+                    <div class="hero-meta__item">
+                        <span class="hero-meta__num">30+</span>
+                        <span class="hero-meta__label">Projects<br>shipped</span>
+                    </div>
+                    <div class="hero-meta__item">
+                        <span class="hero-meta__num">15+</span>
+                        <span class="hero-meta__label">Technologies<br>in the stack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right"></div>
+        </div>
+
+        <div class="hero-stack" aria-hidden="true">
+            <span class="stack-chip stack-chip-1">React</span>
+            <span class="stack-chip stack-chip-2 stack-chip-lime">Node.js</span>
+            <span class="stack-chip stack-chip-3">PostgreSQL</span>
+            <span class="stack-chip stack-chip-4">TypeScript</span>
+        </div>
+
+        <div class="hero-bottom container">
+            <a href="#about" class="scroll-cue">
+                <span class="scroll-cue__line"></span>
+                Scroll to explore
+            </a>
+            <span class="hero-coords">Remote — Available worldwide</span>
+        </div>
+
+        <div class="hero-badge-circle" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+                <defs>
+                    <path id="circlePath" d="M 100,100 m -72,0 a 72,72 0 1,1 144,0 a 72,72 0 1,1 -144,0"/>
+                </defs>
+                <text><textPath href="#circlePath" startOffset="0">OPEN FOR FREELANCE — 2026 — OPEN FOR FREELANCE — 2026 — </textPath></text>
+            </svg>
+            <span class="badge-arrow">↗</span>
+        </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <div class="marquee__group">
+                <span class="marquee__text">Full-Stack Development</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">React & Next.js</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">Node.js & APIs</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">Databases</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">UI Engineering</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">3D & Motion</span><span class="marquee__star">✦</span>
+            </div>
+            <div class="marquee__group">
+                <span class="marquee__text">Full-Stack Development</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">React & Next.js</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">Node.js & APIs</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">Databases</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">UI Engineering</span><span class="marquee__star">✦</span>
+                <span class="marquee__text">3D & Motion</span><span class="marquee__star">✦</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="kicker">01 — About</span>
+                <h2 class="section-title">Code that ships.<br>Design that <em>sticks</em>.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-visual" data-reveal>
+                    <div class="orb-wrap">
+                        <div class="orb-ring r1"></div>
+                        <div class="orb-ring r2"></div>
+                        <div class="orb-ring r3"></div>
+                        <div class="orb"></div>
+                        <div class="orb-chip chip-1">4+ years</div>
+                        <div class="orb-chip chip-2 chip-lime">Full-stack</div>
+                        <div class="orb-chip chip-3">Remote — worldwide</div>
+                    </div>
+                </div>
+                <div class="about-text" data-reveal>
+                    <p class="about-lead">I'm Prince — a full-stack developer who turns complex requirements into fast, elegant products.</p>
+                    <p>I work across the entire stack: designing interfaces, building APIs, modeling data, and shipping to production. I care about performance, accessibility, and the small details that make software feel effortless — and I write code that the next developer will thank me for.</p>
+                    <div class="about-list">
+                        <div class="about-list__item"><span>01</span>Full-stack web applications</div>
+                        <div class="about-list__item"><span>02</span>Frontend architecture & animation</div>
+                        <div class="about-list__item"><span>03</span>APIs, databases & infrastructure</div>
+                        <div class="about-list__item"><span>04</span>Product thinking & UI craft</div>
+                    </div>
+                    <a href="#work" class="link-underline">See my recent work ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-head section-head--row" data-reveal>
+                <div>
+                    <span class="kicker">02 — Experience</span>
+                    <h2 class="section-title">Where I've <em>worked</em></h2>
+                </div>
+                <a href="resume.html" target="_blank" rel="noopener" class="btn btn-ghost magnetic">View résumé <span class="btn-arrow">↗</span></a>
+            </div>
+            <div class="experience-grid">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-item__meta">
+                            <span class="timeline-item__year">2024 — Present</span>
+                            <span class="timeline-item__type">Freelance</span>
+                        </div>
+                        <div class="timeline-item__body">
+                            <h3>Senior Full-Stack Developer <span>Independent</span></h3>
+                            <p>End-to-end product delivery for startups — architecture, APIs, interfaces, and deployment. Recently rebuilt a SaaS analytics platform now processing 2M+ events a day.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">React</span><span class="exp-tag">Node.js</span><span class="exp-tag">PostgreSQL</span><span class="exp-tag">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item__meta">
+                            <span class="timeline-item__year">2022 — 2024</span>
+                            <span class="timeline-item__type">Full-time</span>
+                        </div>
+                        <div class="timeline-item__body">
+                            <h3>Full-Stack Developer <span>Northwind Labs</span></h3>
+                            <p>Built a headless commerce platform used by 40+ merchants and cut checkout latency by 38%. Introduced the design system, CI pipelines, and mentored two junior developers.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">Next.js</span><span class="exp-tag">Prisma</span><span class="exp-tag">Stripe</span><span class="exp-tag">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item__meta">
+                            <span class="timeline-item__year">2021 — 2022</span>
+                            <span class="timeline-item__type">Full-time</span>
+                        </div>
+                        <div class="timeline-item__body">
+                            <h3>Frontend Developer <span>Pixel &amp; Co.</span></h3>
+                            <p>Delivered marketing sites and internal dashboards for fintech clients. Rebuilt the front-end stack and pushed Lighthouse performance scores to 98+ across the board.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">TypeScript</span><span class="exp-tag">React</span><span class="exp-tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item__meta">
+                            <span class="timeline-item__year">2020 — 2021</span>
+                            <span class="timeline-item__type">Full-time</span>
+                        </div>
+                        <div class="timeline-item__body">
+                            <h3>Junior Web Developer <span>Crafted Web Studio</span></h3>
+                            <p>Shipped responsive websites for 15+ clients, maintained custom PHP and WordPress builds, and learned to own projects end-to-end.</p>
+                            <div class="exp-tags">
+                                <span class="exp-tag">JavaScript</span><span class="exp-tag">PHP</span><span class="exp-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="resume-side">
+                    <div class="side-block">
+                        <span class="side-label">Education</span>
+                        <div class="edu-item">
+                            <h4>B.Tech, Computer Science</h4>
+                            <p>University of Delhi</p>
+                            <span class="edu-years">2016 — 2020</span>
+                        </div>
+                        <div class="edu-item">
+                            <h4>Full-Stack Engineering</h4>
+                            <p>freeCodeCamp</p>
+                            <span class="edu-years">2020</span>
+                        </div>
+                    </div>
+                    <div class="side-block">
+                        <span class="side-label">Certifications</span>
+                        <ul class="cert-list">
+                            <li>AWS Certified Developer — Associate</li>
+                            <li>Meta Front-End Developer</li>
+                            <li>MongoDB Associate Developer</li>
+                        </ul>
+                    </div>
+                    <a href="resume.html" target="_blank" rel="noopener" class="resume-card">
+                        <span class="resume-card__icon">↓</span>
+                        <span class="resume-card__text">
+                            <strong>View résumé</strong>
+                            <em>Print-ready · updated 2026</em>
+                        </span>
+                        <span class="resume-card__arrow">↗</span>
+                    </a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work section">
+        <div class="container">
+            <div class="section-head section-head--row" data-reveal>
+                <div>
+                    <span class="kicker">03 — Selected Work</span>
+                    <h2 class="section-title">Recent <em>projects</em></h2>
+                </div>
+                <p class="section-head__note">Full-stack case studies across SaaS, commerce, realtime and AI — from 2023 to 2026.</p>
+            </div>
+            <div class="work-filters" data-reveal>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="saas">SaaS</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="work-grid" id="work-grid"></div>
+        </div>
+    </section>
+
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="kicker">04 — Services</span>
+                <h2 class="section-title">What I <em>bring</em><br>to the table</h2>
+            </div>
+            <div class="service-list">
+                <div class="service-row">
+                    <span class="service-row__num">01</span>
+                    <h3 class="service-row__title">Full-Stack Development</h3>
+                    <p class="service-row__desc">End-to-end web applications — architecture, frontend, backend, database, and deployment.</p>
+                    <span class="service-row__arrow">↗</span>
+                </div>
+                <div class="service-row">
+                    <span class="service-row__num">02</span>
+                    <h3 class="service-row__title">Frontend Engineering</h3>
+                    <p class="service-row__desc">React and Next.js interfaces with smooth animation, accessibility, and top-tier performance.</p>
+                    <span class="service-row__arrow">↗</span>
+                </div>
+                <div class="service-row">
+                    <span class="service-row__num">03</span>
+                    <h3 class="service-row__title">Backend & APIs</h3>
+                    <p class="service-row__desc">Node.js services, REST and GraphQL APIs, authentication, integrations, and data modeling.</p>
+                    <span class="service-row__arrow">↗</span>
+                </div>
+                <div class="service-row">
+                    <span class="service-row__num">04</span>
+                    <h3 class="service-row__title">Product & UI Craft</h3>
+                    <p class="service-row__desc">Interfaces and design systems that look premium and convert — built hand-in-hand with the code.</p>
+                    <span class="service-row__arrow">↗</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="testimonial-card" data-reveal>
+                <span class="kicker">05 — Kind words</span>
+                <div class="testimonial-slider">
+                    <blockquote class="testimonial is-active">
+                        <p>“Prince rebuilt our analytics platform in six weeks. It's faster than the product it replaced — and our team actually enjoys using it.”</p>
+                        <footer>
+                            <span class="t-avatar">SC</span>
+                            <span>
+                                <strong>Sarah Chen</strong>
+                                <em>Head of Product, Lumen Labs</em>
+                            </span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>“Rare to find someone who obsesses over both database queries and type kerning. Prince cleared both bars and then some.”</p>
+                        <footer>
+                            <span class="t-avatar">MK</span>
+                            <span>
+                                <strong>Marcus Keller</strong>
+                                <em>Founder, Cartly</em>
+                            </span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>“Clear communication, zero surprises, and a product that felt finished on day one. We've already booked the next project.”</p>
+                        <footer>
+                            <span class="t-avatar">AR</span>
+                            <span>
+                                <strong>Amelia Ross</strong>
+                                <em>COO, Frameflow</em>
+                            </span>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-controls" role="tablist" aria-label="Testimonials">
+                    <button class="t-dot is-active" aria-label="Testimonial 1"></button>
+                    <button class="t-dot" aria-label="Testimonial 2"></button>
+                    <button class="t-dot" aria-label="Testimonial 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left" data-reveal>
+                    <span class="kicker">06 — Contact</span>
+                    <h2 class="contact-title">Have an idea?<br><em>Let's talk.</em></h2>
+                    <a href="mailto:hello@princesingh.dev" class="contact-mail">hello@princesingh.dev</a>
+                    <div class="contact-details">
+                        <div>
+                            <span>Location</span>
+                            <p>Remote — worldwide</p>
+                        </div>
+                        <div>
+                            <span>Availability</span>
+                            <p>Q3 2026 — 2 slots</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.5H3v12h3.5v-12ZM4.75 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM21 13.6c0-3.2-1.7-4.7-4-4.7-1.8 0-2.6 1-3.1 1.7V8.5H10.4v12H14v-6.4c0-1.7.8-2.5 2-2.5 1.2 0 1.5.9 1.5 2.5v6.4H21v-6.9Z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="X">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644Z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" data-reveal>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="john@company.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Project budget</label>
+                        <select required>
+                            <option value="">Select a range</option>
+                            <option value="5k-10k">$5,000 — $10,000</option>
+                            <option value="10k-25k">$10,000 — $25,000</option>
+                            <option value="25k-50k">$25,000 — $50,000</option>
+                            <option value="50k+">$50,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Tell me about your project</label>
+                        <textarea rows="4" placeholder="Goals, timeline, links — anything that helps." required></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">Send message <span>↗</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-top">
+            <span class="kicker">© 2026 Prince Singh</span>
+            <div class="footer-top__links">
+                <a href="resume.html" target="_blank" rel="noopener" class="back-top">Résumé ↗</a>
+                <a href="#home" class="back-top">Back to top ↑</a>
+            </div>
+        </div>
+        <div class="footer-wordmark">PRINCE SINGH<span>©</span></div>
+        <div class="container footer-bottom">
+            <span>Design & code by Prince Singh</span>
+            <span class="footer-coords">Remote — available worldwide</span>
+            <span>Local time — <span id="footer-time">00:00</span></span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
